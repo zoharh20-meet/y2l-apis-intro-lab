@@ -1,4 +1,3 @@
-# y2s18-heroku-demo
 ## Before you start: Fork and clone this repository
 
 1. Fork this repository by clicking "Fork" on this page:
