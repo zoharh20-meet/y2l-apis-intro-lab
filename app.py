@@ -20,12 +20,12 @@ def movies():
                     "image_url": "https://ksassets.timeincuk.net/wp/uploads/sites/55/2018/02/KXC1W2-920x584.jpg"
                     }
                     """
-    return render_template('movie.html')
+    return render_template('movie.html', movie={})
 
 
 @app.route('/tvshows')
 def tv_shows():
-    """
+    json_string = """
     [{
     "url":"http://www.tvmaze.com/shows/2705/narcos",
     "name":"Narcos",
@@ -55,7 +55,9 @@ def tv_shows():
     ]
     }]    
     """
-    # You'll need 
+    # Write code here to take the `json_string` and return list of movies to the user
+
+
     return render_template('tv_shows.html')
 
 
@@ -64,14 +66,14 @@ def tv_shows():
 ############################
 @app.route('/dogs')
 def dog_breeds():
-"""
-If you visit https://dog.ceo/api/breeds/list/all 
-a list of all dog breeds is returned. Try this in your browser! (Chrome/firefox)
+    """
+    If you visit https://dog.ceo/api/breeds/list/all 
+    a list of all dog breeds is returned. Try this in your browser! (Chrome/firefox)
 
-Using the `requests` library (as shown in the slides)
-Do a GET request to the link above to get all dog breeds and return them
-to them as a list to the user as a bullet pointed list
-"""
+    Using the `requests` library (as shown in the slides)
+    Do a GET request to the link above to get all dog breeds and return them
+    to them as a list to the user as a bullet pointed list
+    """
     return render_template('dogs.html')
 
 if __name__ == '__main__':
