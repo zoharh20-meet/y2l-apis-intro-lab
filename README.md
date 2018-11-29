@@ -24,10 +24,10 @@ Do a GET request to the link above to get all dog breeds and return them
 to them as a list to the user as a bullet pointed list
 
 ### **Bonus:**
-Calling https://dog.ceo/api/breed/<BREED>/images/random
+Calling https://dog.ceo/api/breed/BREED_NAME_HERE_INSTEAD/images/random
 
-With a <BREED> provided returns an image, example:
- - https://dog.ceo/api/breed/<BREED>/images/random
+With a <BREED> provided returns an image, Example:
+ - https://dog.ceo/api/breed/beagle/images/random
 
 Create a new route and html page that has a text box, when the user write a name
 of a breed it returns an image using the API url above
