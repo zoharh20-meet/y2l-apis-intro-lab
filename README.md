@@ -9,7 +9,8 @@
 ## Part 1: JSON manipulation
 Start the server by running the app.py file (`python app.py`) and go to the homepage and click around to understand what's already provided for you.
 
-Change the `/movie`function (in app.py). Look at the `json_string` variable change it form JSON string to python idct format and return to the user the details about the movie specified in the variable `json_string` 
+Change the `/movie`function (in app.py). Look at the `json_string` variable change it form JSON string to python dictionary format and return to the user the details about the movie specified in the variable `json_string` 
+
  - When you visit http://127.0.0.1:5000/movie you should be able to see the title of the movie, the release date, and display an image of the movie
  
 ### **Bonus:** 
