@@ -15,7 +15,7 @@ C. Look at the `movies()` function in `app.py`. In order to use the information 
 
 D. Now we need to pass the dictionary into `render_template`. On line 23 of `app.py`, your code should look something like: `return render_template('movie.html', movie=PYTHON_DICTIONARY_HERE)`.
 
-E. When you visit http://127.0.0.1:5000/movie you should be able to see the title of the movie, the release date, and display an image of the movie
+E. When you visit http://127.0.0.1:5000/movie you should be able to see the title of the movie and an image of the movie. But notice that the release date is not shown! Look at `movie.html` and fix it to show the movie's release date.
  
 ### **Bonus:** 
 Change the `/tv_shows` function and use the `json_string` variable to show now a list of the tv shows (you will have to change it from a JSON string to python dict like you did before). Visiting http://127.0.0.1:5000/tv_shows should show you a list of TV shows that have name, language, and genres for the show
