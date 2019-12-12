@@ -7,7 +7,7 @@
 ![copying url](https://image.ibb.co/n2wYeT/copying_clone.png)-->
 
 ## Part 1: JSON manipulation
-A. Start the server by opening terminal, cd-ing into the folder you clones, and running the app.py file (`python app.py`).
+A. First we'll start the server. Do this by opening terminal, cd-ing into the folder you clones, and running the app.py file (`python app.py`).
 
 B. In a web browser, go to the homepage and click around to understand what's already provided for you.
 
