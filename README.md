@@ -1,17 +1,21 @@
 ## Before you start: Fork and clone this repository
 
-1. Fork this repository by clicking "Fork" on this page:
-![forking](https://image.ibb.co/jHRieT/forking.png)
+<!-- 1. Fork this repository by clicking "Fork" on this page:
+![forking](https://image.ibb.co/jHRieT/forking.png)-->
 
-2. Copy this repository's url by clicking the green clone button:
-![copying url](https://image.ibb.co/n2wYeT/copying_clone.png)
+<!--2. Copy this repository's url by clicking the green clone button:
+![copying url](https://image.ibb.co/n2wYeT/copying_clone.png)-->
 
 ## Part 1: JSON manipulation
-Start the server by running the app.py file (`python app.py`) and go to the homepage and click around to understand what's already provided for you.
+A. Start the server by opening terminal, cd-ing into the folder you clones, and running the app.py file (`python app.py`).
 
-Change the `/movie`function (in app.py). Look at the `json_string` variable change it form JSON string to python dictionary format and return to the user the details about the movie specified in the variable `json_string` 
+B. In a web browser, go to the homepage and click around to understand what's already provided for you.
 
- - When you visit http://127.0.0.1:5000/movie you should be able to see the title of the movie, the release date, and display an image of the movie
+C. Look at the `movies()` function in `app.py`. In order to use the information from the JSON string, we need to turn it into a python dictionary. Take a look at slide 22 to see how to use json.loads. 
+
+D. Now we need to pass the dictionary into `render_template`. On line 23 of `app.py`, your code should look something like: `return render_template('movie.html', movie=PYTHON_DICTIONARY_HERE)`.
+
+E. When you visit http://127.0.0.1:5000/movie you should be able to see the title of the movie, the release date, and display an image of the movie
  
 ### **Bonus:** 
 Change the `/tv_shows` function and use the `json_string` variable to show now a list of the tv shows (you will have to change it from a JSON string to python dict like you did before). Visiting http://127.0.0.1:5000/tv_shows should show you a list of TV shows that have name, language, and genres for the show
@@ -22,7 +26,7 @@ The documentation for thefirst API you will be working with can be found here: h
 If you visit https://dog.ceo/api/breeds/list/all 
 a list of all dog breeds is returned. Try this in your browser! (Chrome/firefox)
 
-Using the `requests` library (as shown in the slides)
+Using the `requests` library (as shown in slide 25)
 Do a GET request to the link above to get all dog breeds and return them
 to them as a list to the user as a bullet pointed list
 
